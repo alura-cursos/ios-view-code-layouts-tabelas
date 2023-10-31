@@ -7,12 +7,28 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class MoviesViewController: UIViewController, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return names.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    var names: [String] = [
+        "Ana",
+        "Giovanna",
+        "Lucas",
+        "João"
+    ]
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .clear
+        tableView.dataSource = self
         return tableView
     }()
     
