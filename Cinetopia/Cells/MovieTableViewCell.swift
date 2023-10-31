@@ -23,6 +23,7 @@ class MovieTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 20.0, weight: .bold)
         label.textColor = .white
+        label.numberOfLines = 0
         return label
     }()
     
@@ -66,6 +67,7 @@ class MovieTableViewCell: UITableViewCell {
             
             movieTitleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -16),
             movieTitleLabel.leadingAnchor.constraint(equalTo: moviePosterImageView.trailingAnchor, constant: 16),
+            movieTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             
             movieReleaseDateLabel.topAnchor.constraint(equalTo: movieTitleLabel.bottomAnchor, constant: 8),
             movieReleaseDateLabel.leadingAnchor.constraint(equalTo: moviePosterImageView.trailingAnchor, constant: 16)
