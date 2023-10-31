@@ -14,7 +14,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "nameCell", for: indexPath)
+        var configuration = cell.defaultContentConfiguration()
+        configuration.text = names[indexPath.row]
+        configuration.textProperties.color = .white
+        cell.contentConfiguration = configuration
+        cell.backgroundColor = .clear
+        return cell
     }
     
     var names: [String] = [
@@ -29,6 +35,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .clear
         tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "nameCell")
         return tableView
     }()
     
