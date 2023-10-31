@@ -1,4 +1,4 @@
-![Thumbnail GitHub](https://github.com/giovannamoeller/ios-fundamentos-view-code/assets/47362960/285cd843-1c02-46a9-b4de-d26d43f452c7)
+![Thumbnail GitHub](https://github.com/giovannamoeller/ios-view-code-layouts-tabelas/assets/47362960/7a6d81b5-fa42-4c96-8697-76f19f5ab37c)
 
 # Cinetopia
 
@@ -20,12 +20,16 @@ A aplicação Cinetopia é um aplicativo iOS que exibe a lista de filmes com mai
 - View code: Abordagem programática para construção de interfaces de usuário, sem o uso de storyboards;
 - `UINavigationController`: Utilizado para navegação entre telas;
 - `UIButton, UIImageView, UILabel, UIStackView`: Componentes de interface de usuário para construção das telas.
+- `UITableView`: Componente para construção de tabelas.
+- `UITableViewDataSource`, `UITableViewDelegate`: Protocolos para construção de tabelas.
+- `UISearchBar`, `UISearchBarDelegate`: Componente e protocolo para construção de barras de pesquisa.
+- `UITableViewCell`: Construção de células para tabelas
 
 E muito mais! 
  
 ## 📁 Acesso ao projeto
 
-Você pode [baixar o zip](https://github.com/alura-cursos/ios-fundamentos-view-code/archive/refs/heads/main.zip) com o código final do projeto ou [acessar o código fonte](https://github.com/alura-cursos/ios-fundamentos-view-code/).
+Você pode [baixar o zip](https://github.com/alura-cursos/ios-view-code-layouts-tabelas/archive/refs/heads/main.zip) com o código final do projeto ou [acessar o código fonte](https://github.com/alura-cursos/ios-view-code-layouts-tabelas/).
 
 ## 🛠️ Abrir e rodar o projeto
 
@@ -44,4 +48,4 @@ Para rodar o seu projeto, você deve clicar no botão de play na parte superior 
 
 ## 📚 Mais informações do curso
 
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/ios-fundamentos-view-code) que desenvolve o projeto!
+Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://cursos.alura.com.br/course/ios-view-code-layouts-tabelas) que desenvolve o projeto!
