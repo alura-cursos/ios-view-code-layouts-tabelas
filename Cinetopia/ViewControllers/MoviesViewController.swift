@@ -19,6 +19,13 @@ class MoviesViewController: UIViewController {
         return tableView
     }()
     
+    private lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.placeholder = "Pesquisar"
+        searchBar.searchTextField.backgroundColor = .white
+        return searchBar
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .background
@@ -45,6 +52,7 @@ class MoviesViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.titleView = searchBar
     }
     
     
