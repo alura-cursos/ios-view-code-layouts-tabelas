@@ -32,7 +32,11 @@ class MovieTableViewCell: UITableViewCell {
     }
     
     private func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+            moviePosterImageView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
+          moviePosterImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+          moviePosterImageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
+        ])
     }
     
     override func awakeFromNib() {
