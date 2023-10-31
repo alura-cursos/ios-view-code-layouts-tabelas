@@ -14,6 +14,7 @@
 		480C2CE82AF089AA00E8C875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480C2CE62AF089AA00E8C875 /* LaunchScreen.storyboard */; };
 		480C2CF02AF08E6300E8C875 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480C2CEF2AF08E6300E8C875 /* MoviesViewController.swift */; };
 		48AE715D2AF1963A002E4E8A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE715C2AF1963A002E4E8A /* Movie.swift */; };
+		48AE71602AF1976B002E4E8A /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AE715F2AF1976B002E4E8A /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		480C2CE92AF089AA00E8C875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480C2CEF2AF08E6300E8C875 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		48AE715C2AF1963A002E4E8A /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		48AE715F2AF1976B002E4E8A /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		480C2CDA2AF089A900E8C875 /* Cinetopia */ = {
 			isa = PBXGroup;
 			children = (
+				48AE715E2AF1975C002E4E8A /* Cells */,
 				48AE715B2AF19630002E4E8A /* Models */,
 				48AE715A2AF1962B002E4E8A /* ViewControllers */,
 				480C2CDB2AF089A900E8C875 /* AppDelegate.swift */,
@@ -84,6 +87,14 @@
 				48AE715C2AF1963A002E4E8A /* Movie.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		48AE715E2AF1975C002E4E8A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48AE715F2AF1976B002E4E8A /* MovieTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				480C2CE02AF089A900E8C875 /* HomeViewController.swift in Sources */,
 				480C2CDC2AF089A900E8C875 /* AppDelegate.swift in Sources */,
+				48AE71602AF1976B002E4E8A /* MovieTableViewCell.swift in Sources */,
 				480C2CDE2AF089A900E8C875 /* SceneDelegate.swift in Sources */,
 				480C2CF02AF08E6300E8C875 /* MoviesViewController.swift in Sources */,
 				48AE715D2AF1963A002E4E8A /* Movie.swift in Sources */,
